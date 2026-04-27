@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>EcommerceStore</RootNamespace>
+    <AssemblyName>EcommerceStore</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Models\Models.cs" />
+    <Compile Include="DataLayer\DBConnection.cs" />
+    <Compile Include="DataLayer\UserDL.cs" />
+    <Compile Include="DataLayer\ProductDL.cs" />
+    <Compile Include="DataLayer\CartDL.cs" />
+    <Compile Include="DataLayer\OrderDL.cs" />
+    <Compile Include="BusinessLayer\UserBL.cs" />
+    <Compile Include="BusinessLayer\CartOrderBL.cs" />
+    <Compile Include="UILayer\Program.cs" />
+  </ItemGroup>
+
+</Project>

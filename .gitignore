@@ -1,0 +1,17 @@
+# Build outputs
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Visual Studio files
+*.csproj.user
+*.dbmdl
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
